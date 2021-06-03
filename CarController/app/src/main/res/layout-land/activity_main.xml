@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="122dp">
+
+        <TableRow
+            android:layout_width="445dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/servo1_1"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/arrow"
+                android:backgroundTint="@color/white"
+                android:text="" />
+
+            <Button
+                android:id="@+id/servo1_2"
+                android:backgroundTint="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/arrow"
+                android:rotationY="180"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/servo2_1"
+                android:backgroundTint="@color/white"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/arrow"
+                android:text="" />
+
+            <Button
+                android:id="@+id/servo2_2"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/arrow"
+                android:rotationY="180"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/servo3_1"
+                android:layout_width="60dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arrow"
+                android:rotation="90"
+                android:text="" />
+
+            <Button
+                android:id="@+id/servo3_2"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/arrow"
+                android:rotation="-90"
+                android:backgroundTint="@color/white"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/servo4_1"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arrow"
+                android:rotation="90"
+                android:text="" />
+
+            <Button
+                android:id="@+id/servo4_2"
+                android:layout_width="60dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="45dp"
+                android:background="@drawable/arrow"
+                android:rotation="-90"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/servo5_1"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/arrow"
+                android:backgroundTint="@color/white"
+                android:rotation="90"
+                android:text="" />
+
+            <Button
+                android:id="@+id/servo5_2"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:background="@drawable/arrow"
+                android:backgroundTint="@color/white"
+                android:rotation="-90"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/servo6_1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/arrow"
+        android:backgroundTint="@color/white"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/servo6_2"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="292dp"
+        android:background="@drawable/arrow"
+        android:backgroundTint="@color/white"
+        android:rotationY="180"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/downarrow"
+        app:layout_constraintTop_toBottomOf="@+id/leftarrow" />
+
+    <ImageButton
+        android:id="@+id/uparrow"
+        android:layout_width="157dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/leftarrow"
+        app:layout_constraintEnd_toStartOf="@+id/rightarrow"
+        app:layout_constraintStart_toEndOf="@+id/leftarrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/leftarrow"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="136dp"
+        android:background="#80000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/rightarrow"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="4dp"
+        android:background="#80000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/downarrow"
+        app:layout_constraintStart_toEndOf="@+id/leftarrow"
+        app:layout_constraintTop_toBottomOf="@+id/uparrow"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/downarrow"
+        android:layout_width="140dp"
+        android:layout_height="92dp"
+        android:background="#80000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/leftarrow"
+        app:layout_constraintTop_toBottomOf="@+id/leftarrow"
+        app:srcCompat="@drawable/down" />
+
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="A3"
+        android:textColor="#FFFFFF"
+        android:textSize="30"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="A4"
+        android:textColor="#FFFFFF"
+        android:textSize="30"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="A5"
+        android:textColor="#FFFFFF"
+        android:textSize="30"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        tools:layout_editor_absoluteY="127dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

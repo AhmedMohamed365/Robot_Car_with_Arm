@@ -6,10 +6,12 @@ We Got the **7th position** in that competition.
 
 
 We used about : 
+
 -6 Servo motors for the arm
 - 4 motors with 2 driver
 - Arduino Uno with bluetooth module
 -Hand crafted Android app to control the movment and arm  using bluetooth.
+
 ![finishing](https://user-images.githubusercontent.com/56398966/161232588-16c4f0e5-ff86-4139-aaef-f6c8cfacf345.jpg)
 
-![Uploading inCompetition.jpeg…]()
+![inCompetition](https://user-images.githubusercontent.com/56398966/161238801-f20cb0d7-d847-4aab-8a72-3aac2eb1bdbf.jpeg)
